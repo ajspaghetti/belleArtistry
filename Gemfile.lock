@@ -75,6 +75,41 @@ GEM
       minitest (>= 5.1)
       mutex_m
       tzinfo (~> 2.0)
+    aws-eventstream (1.3.0)
+    aws-partitions (1.894.0)
+    aws-record (2.13.0)
+      aws-sdk-dynamodb (~> 1, >= 1.85.0)
+    aws-sdk-core (3.191.3)
+      aws-eventstream (~> 1, >= 1.3.0)
+      aws-partitions (~> 1, >= 1.651.0)
+      aws-sigv4 (~> 1.8)
+      jmespath (~> 1, >= 1.6.1)
+    aws-sdk-dynamodb (1.104.0)
+      aws-sdk-core (~> 3, >= 3.191.0)
+      aws-sigv4 (~> 1.1)
+    aws-sdk-rails (3.10.0)
+      aws-record (~> 2)
+      aws-sdk-ses (~> 1, >= 1.50.0)
+      aws-sdk-sesv2 (~> 1, >= 1.34.0)
+      aws-sdk-sqs (~> 1, >= 1.56.0)
+      aws-sessionstore-dynamodb (~> 2)
+      concurrent-ruby (~> 1)
+      railties (>= 5.2.0)
+    aws-sdk-ses (1.59.0)
+      aws-sdk-core (~> 3, >= 3.191.0)
+      aws-sigv4 (~> 1.1)
+    aws-sdk-sesv2 (1.44.0)
+      aws-sdk-core (~> 3, >= 3.191.0)
+      aws-sigv4 (~> 1.1)
+    aws-sdk-sqs (1.70.0)
+      aws-sdk-core (~> 3, >= 3.191.0)
+      aws-sigv4 (~> 1.1)
+    aws-sessionstore-dynamodb (2.2.0)
+      aws-sdk-dynamodb (~> 1, >= 1.85.0)
+      rack (>= 2, < 4)
+      rack-session (>= 1, < 3)
+    aws-sigv4 (1.8.0)
+      aws-eventstream (~> 1, >= 1.0.2)
     base64 (0.2.0)
     bigdecimal (3.1.6)
     bootsnap (1.18.3)
@@ -87,6 +122,10 @@ GEM
     debug (1.9.1)
       irb (~> 1.10)
       reline (>= 0.3.8)
+    dotenv (3.0.2)
+    dotenv-rails (3.0.2)
+      dotenv (= 3.0.2)
+      railties (>= 6.1)
     drb (2.2.0)
       ruby2_keywords
     erubi (1.12.0)
@@ -98,6 +137,7 @@ GEM
     irb (1.11.2)
       rdoc
       reline (>= 0.4.2)
+    jmespath (1.6.2)
     loofah (2.22.0)
       crass (~> 1.0.2)
       nokogiri (>= 1.12.0)
@@ -140,6 +180,8 @@ GEM
       nio4r (~> 2.0)
     racc (1.7.3)
     rack (3.0.9)
+    rack-cors (2.0.1)
+      rack (>= 2.0.0)
     rack-session (2.0.0)
       rack (>= 3.0.0)
     rack-test (2.1.0)
@@ -202,10 +244,13 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
+  aws-sdk-rails
   bootsnap
   debug
+  dotenv-rails
   pg (~> 1.1)
   puma (>= 5.0)
+  rack-cors
   rails (~> 7.1.2)
   tzinfo-data
 

@@ -22,3 +22,6 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+
+* AWS (delete later)
+Access key id and Secret access key both located in .env file.
