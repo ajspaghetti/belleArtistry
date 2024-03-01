@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react-jsx"
+  },
+  "include": [
+    "src"
+, "../frontend/src/components/ts/Nav.tsx", "../frontend/src/components/ts/NewGuests.tsx", "../frontend/src/components/ts/Policies.tsx", "../frontend/src/components/ts/Services.tsx", "../frontend/src/components/ts/AboutMe.tsx", "../frontend/src/components/ts/BookNow.tsx", "../frontend/src/components/ts/Contact.tsx", "../frontend/src/components/ts/Footer.tsx", "../frontend/src/components/ts/Home.tsx", "../frontend/src/components/ts/services", "../frontend/src/components/ts/auth"  ]
+}
