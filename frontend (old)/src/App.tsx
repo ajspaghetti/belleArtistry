@@ -1,22 +1,22 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Nav from './components/ts/Nav'; // Adjust the import path as needed
-import Home from './components/ts/Home';
-import AboutMe from './components/ts/AboutMe';
-import Services from './components/ts/Services';
-import BookNow from './components/ts/BookNow';
-import Hair from './components/ts/services/Hair';
-import Styles from './components/ts/services/hair/Styles';
-import Highlights from './components/ts/services/hair/Highlights';
-import Haircuts from './components/ts/services/hair/Haircuts'
-import Eyelashes from './components/ts/services/Eyelashes'
-import Color from './components/ts/services/hair/Color'
-import Treatments from './components/ts/services/hair/Treatments'
-import Extensions from './components/ts/services/eyelashes/Extensions'
-import Login from './components/ts/auth/Login'
-import Policies from './components/ts/Policies'
-import Contact from './components/ts/Contact'
-import Footer from './components/ts/Footer'
+import Nav from '../../frontend/src/components/ts/Nav'; // Adjust the import path as needed
+import Home from '../../frontend/src/components/ts/Home';
+import AboutMe from '../../frontend/src/components/ts/AboutMe';
+import Services from '../../frontend/src/components/ts/Services';
+import BookNow from '../../frontend/src/components/ts/BookNow';
+import Hair from '../../frontend/src/components/ts/services/Hair';
+import Styles from '../../frontend/src/components/ts/services/hair/Styles';
+import Highlights from '../../frontend/src/components/ts/services/hair/Highlights';
+import Haircuts from '../../frontend/src/components/ts/services/hair/Haircuts'
+import Eyelashes from '../../frontend/src/components/ts/services/Eyelashes'
+import Color from '../../frontend/src/components/ts/services/hair/Color'
+import Treatments from '../../frontend/src/components/ts/services/hair/Treatments'
+import Extensions from '../../frontend/src/components/ts/services/eyelashes/Extensions'
+import Login from '../../frontend/src/components/ts/auth/Login'
+import Policies from '../../frontend/src/components/ts/Policies'
+import Contact from '../../frontend/src/components/ts/Contact'
+import Footer from '../../frontend/src/components/ts/Footer'
 import "./App.css"
 
 
