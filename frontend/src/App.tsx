@@ -43,7 +43,7 @@ function App() {
           <Route path="policies" element={<Policies />} />
           <Route path="booknow" element={<BookNow />} />
           <Route path="login" element={<Login />} />
-        </Routes>
+        </Routes> 
       </BrowserRouter>
       <Footer />
     </div>
